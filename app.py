@@ -82,7 +82,8 @@ def seeded(bingo_seed):
     "\"I'm going with you\"",
     "Plot armor",
     "Character has a disability",
-    "Common literally reference"
+    "Common literally reference",
+    "Person with headphones misses everything"
   ]
 
   seed(bingo_seed)

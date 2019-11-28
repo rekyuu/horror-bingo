@@ -101,7 +101,8 @@ def seeded(bingo_seed):
       "Not scary",
       "Inappropriate comedic timing",
       "Off-color sexuality/gender joke",
-      "Character falls asleep at inappropriate time"
+      "Character falls asleep at inappropriate time",
+      "Dog barks at something unseen"
     ]
 
     seed(bingo_seed)

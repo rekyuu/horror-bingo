@@ -1,6 +1,5 @@
 from flask import Flask, redirect, render_template, url_for
-import json
-from random import randint, sample, seed, shuffle
+from random import randint, sample, seed
 import time
 
 app = Flask(__name__)

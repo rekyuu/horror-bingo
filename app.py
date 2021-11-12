@@ -2,11 +2,14 @@ from flask import Flask, redirect, render_template, url_for
 from random import randint, sample, seed
 import time
 
+
 app = Flask(__name__)
+
 
 @app.route("/")
 def main():
   return _seed_and_redirect()
+
 
 @app.route("/<int:bingo_seed>")
 def seeded(bingo_seed):
@@ -109,9 +112,11 @@ def seeded(bingo_seed):
 
     return render_template("main.html", bingo_seed = bingo_seed, cells = cells)
 
+
 @app.errorhandler(404)
 def not_found(e):
   return _seed_and_redirect()
+
 
 def _seed_and_redirect():
   seed(time.time())
@@ -119,7 +124,10 @@ def _seed_and_redirect():
 
   return redirect(f"/{bingo_seed}")
 
+
+def create_app():
+  return app
+  
+
 if __name__ == "__main__":
-  app.run(
-    debug = False
-  )
+  app.run()

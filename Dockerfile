@@ -1,4 +1,4 @@
-FROM python:3.9.7-alpine AS base
+FROM python:3.12.3-alpine AS base
 
 WORKDIR /app
 
@@ -7,4 +7,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD [ "waitress-serve", "--port=5000", "--call", "app:create_app" ]
+CMD [ "gunicorn", "-w", "1", "-b", "0.0.0.0", "app:create_app()" ]

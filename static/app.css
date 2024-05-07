@@ -39,15 +39,15 @@ td:first-child {
 }
 
 td:hover, td.hover {
-  background: rgba(232, 86, 0, 25%);
+  background: rgba(232, 86, 0, 0.25);
 }
 
 td.active {
-  background: rgba(232, 86, 0, 50%);
+  background: rgba(232, 86, 0, 0.50);
 }
 
 td.active:hover {
-  background: rgba(232, 86, 0, 75%);
+  background: rgba(232, 86, 0, 0.75);
 }
 
 tr {
